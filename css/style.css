@@ -6,11 +6,10 @@
 	box-sizing: border-box;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
-    outline: 1px solid palevioletred;
+    /* outline: 1px solid palevioletred; */
 }
 
 body {
-    width: 100vw;
 	justify-content: center;
 	align-items: center;
 	background-image: linear-gradient(120deg, black, gray);
@@ -20,12 +19,13 @@ body {
 
 .slider > input {
 	display: none;
+    cursor: pointer;
 }
 
-.texts,
+/* .texts,
 .control {
     flex: 1; 
-}
+} */
 
 .control {
     display: flex;
@@ -37,6 +37,7 @@ body {
     margin-left: 70%;
     padding: 1.2rem;
     padding-right: 0.1%;
+    z-index: 1;
 }
 
 .slider label {
@@ -47,30 +48,28 @@ body {
 	width: 1.5rem;
 	border-radius: 20%;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: animate_gradient 5s ease 1;
-    cursor: pointer;
-   
+    background-size: 400% 390%;
+    
 }
 
-.slider label::before {
+.slider label:before {
     content: ""; 
     padding: 1.8rem;
-    cursor: pointer;
-    
 }
 
 .slider label:after {
 	border: 0.3rem solid black;
 	content: " ";
 	display: block;
-	height: 1.5rem;
-	width: 1.5rem;
+	height: 1.6rem;
+	width: 1.6rem;
 	border-radius: 20%;
-    margin-top: -65%;
+    margin-top: -70%;
+    cursor: pointer;
 }
+
 .slider label:hover {
-    animation: none;
+    animation: animate_gradient 5s ease infinite;
 }
 
 #point1:checked ~ .control label:nth-of-type(1),
@@ -85,6 +84,7 @@ body {
 .container {
     display: flex;
     padding: 2rem;
+    padding-bottom: 0.1rem;
     max-width: 100rem;
     margin: 0 auto;
 }
@@ -94,7 +94,6 @@ body {
     overflow-x: hidden; 
     margin: 0 auto;
     flex-direction: column;
-    
 }
 
 .slides {
@@ -117,6 +116,7 @@ body {
     width: 100%; 
     height: auto; 
     overflow: hidden;
+    
 }
 
 .slides img { 
@@ -135,6 +135,7 @@ flex-direction: row;
     margin-top: -5rem;
     padding: 2rem;
     padding-left: 0.1%;
+    z-index: 0;
 }
 
 .text1 {
