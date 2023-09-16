@@ -1,5 +1,5 @@
 *{
-    outline: 1px solid palevioletred;
+    /* outline: 1px solid palevioletred; */
 }
 body {
     margin: 0;
@@ -13,7 +13,6 @@ body {
 
 .slider > input {
 	display: none;
-    cursor: pointer;
 }
 
 /* .texts,
@@ -38,7 +37,8 @@ body {
 	border-radius: 50%;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;  
-    object-fit: cover;
+    object-fit: inherit;
+    height: 1.85rem;
 }
 
 .slider label:hover {
@@ -46,7 +46,7 @@ body {
 }
 
 .slider label img {
-    overflow: hidden;
+    visibility: hidden;
 }
 
 #point1:checked ~ .control label:nth-of-type(1),
@@ -56,6 +56,15 @@ body {
 #point5:checked ~ .control label:nth-of-type(5)
 {
 	background: gray;
+}
+
+#point1:checked ~ .control label .img1,
+#point2:checked ~ .control label .img2,
+#point3:checked ~ .control label .img3,
+#point4:checked ~ .control label .img4,
+#point5:checked ~ .control label .img5
+{
+    visibility: visible;
 }
 
 .container {
