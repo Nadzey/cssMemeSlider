@@ -15,11 +15,6 @@ body {
 	display: none;
 }
 
-/* .texts,
-.control {
-    flex: 1; 
-} */
-
 .control {
     display: flex;
     column-gap: 1rem;
@@ -29,8 +24,8 @@ body {
     z-index: 1;
 }
 
-
 .slider label {
+    display: flex;
     border: 0.2rem solid black;
 	cursor: pointer;
 	display: inline-block;
@@ -48,6 +43,11 @@ body {
 .slider label img {
     visibility: hidden;
 }
+
+.slider label span {
+    padding: 0 0 1rem;
+}
+
 
 #point1:checked ~ .control label:nth-of-type(1),
 #point2:checked ~ .control label:nth-of-type(2),
@@ -71,9 +71,9 @@ body {
     display: flex;
     padding: 2rem;
     padding-bottom: 0.1rem;
-    max-width: 100rem;
+    /* max-width: 100rem; */
     margin: 0 auto;
-    height: auto;
+    /* height: auto; */
 }
 
 .slider {
@@ -89,14 +89,13 @@ body {
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     transition: all 1s ease;
-    max-width: 86rem;
+    max-width: 68rem;
     max-height: 42.57rem;
     margin: 0 auto;
     margin-bottom: 4%;
 }
 
-.slides > div {
-   
+.slides > div { 
     aspect-ratio: 16 / 9; 
     border-radius: 1.5rem;
     flex: 0 0 auto; 
@@ -119,7 +118,7 @@ flex-direction: row;
     color: aliceblue;
     white-space: nowrap;
     width: 70%;
-    margin-top: -5rem;
+    margin-top: -4.65rem;
     padding: 2rem;
     padding-left: 0.1%;
     z-index: 0;
@@ -247,7 +246,7 @@ flex-direction: row;
 
 @media (max-width : 830px){    
     .text5 {
-        margin-left: 34%;
+        margin-left: 35%;
     }
     .text2 {
         margin-left: 6%;
@@ -267,7 +266,7 @@ flex-direction: row;
     }
     
     .text5 {
-        margin-left: 32%;
+        margin-left: 33%;
     }
 
     .text4 {
@@ -286,7 +285,7 @@ flex-direction: row;
 @media (max-width : 618px){
     
     .text5 {
-        margin-left: 39%;
+        margin-left: 37%;
     }
 
 }
