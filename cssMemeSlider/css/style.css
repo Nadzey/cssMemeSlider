@@ -89,7 +89,7 @@ body {
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     transition: all 1s ease;
-    max-width: 68rem;
+    max-width: 86rem;
     max-height: 42.57rem;
     margin: 0 auto;
     margin-bottom: 4%;
