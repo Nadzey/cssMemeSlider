@@ -1,5 +1,5 @@
 *{
-    /* outline: 1px solid palevioletred; */
+    outline: 1px solid palevioletred;
 }
 body {
     margin: 0;
@@ -117,7 +117,7 @@ flex-direction: row;
     align-content: flex-start;
     color: aliceblue;
     white-space: nowrap;
-    width: 70%;
+    width: 100%;
     margin-top: -4.65rem;
     padding: 2rem;
     padding-left: 0.1%;
@@ -133,28 +133,24 @@ flex-direction: row;
 .text2 {
     transition: all 0.5s ease;
     opacity: 0;
-    margin-left: 3.5%;
     animation: floatShadow 2s ease-in-out infinite;
 }
 
 .text3 {
     transition: all 0.5s ease;
     opacity: 0; 
-    margin-left: -6.5%;
     animation: floatShadow 2s ease-in-out infinite;
 }
 
 .text4 {
     transition: all 0.5s ease;
     opacity: 0;
-    margin-left: -9%;
     animation: floatShadow 2s ease-in-out infinite;
 }
 
 .text5 {
     transition: all 0.5s ease;
     opacity: 0;
-    margin-left: 20.5%;
     animation: floatShadow 2s ease-in-out infinite;
 }
 
@@ -191,90 +187,19 @@ flex-direction: row;
 }
 #point2:checked ~ .texts .text2  {
     opacity: 1;
-    transform:translateX(-100%);
+    transform:translateX(-88%);
 }
 #point3:checked ~ .texts .text3 {
     opacity: 1;
-    transform:translateX(-200%);
+    transform:translateX(-212%);
 }
 #point4:checked ~ .texts .text4{
     opacity: 1;
-    transform:translateX(-300%);
+    transform:translateX(-354.5%);
 }
 #point5:checked ~ .texts .text5{
     opacity: 1;
-    transform:translateX(-400%);
-}
-
-@media (max-width : 1370px){
-    .text5 {
-        margin-left: 23%;
-    }
-
-}
-@media (max-width : 1178px){
-    .text5 {
-        margin-left: 27%;
-    }
-    .text4 {
-        margin-left: -12%;
-    }
-    .text3 {
-        margin-left: -8%;
-    }
-
-    .text2 {
-        margin-left: 5.5%;
-    }
-
-}
-
-@media (max-width : 1024px){
-  
-    .text2 {
-        margin-left: 5%;
-    }
-    
-    .text3 {
-        margin-left: -9%;
-    }
-    
-    .text4 {
-        margin-left: -13%;
-    }
-    
-    .text5 {
-        margin-left: 30%;
-    }
-
-}
-@media (max-width : 950px){    
-    .text5 {
-        margin-left: 32%;
-    }
-}
-
-@media (max-width : 830px){    
-    .text5 {
-        margin-left: 35%;
-    }
-    .text2 {
-        margin-left: 6%;
-    }
-}
-
-@media (max-width : 750px) {
-    .text5 {
-        margin-left: 41%;
-    }
-
-    .text4 {
-        margin-left: -19%;
-    }
-    .text2 {
-        margin-left: 7.5%;
-    }
-
+    transform:translateX(-368.5%);
 }
 
 @media (max-width : 668px){
@@ -288,96 +213,6 @@ flex-direction: row;
         width: 100%;
     }
     
-    .text5 {
-        margin-left: 33%;
-    }
-
-    .text4 {
-        margin-left: -14%;
-    }
-
-    .text3 {
-        margin-left: -10.5%;
-    }
-    .text2 {
-        margin-left: 6%;
-    }
-
-}
-
-@media (max-width : 618px){
-    
-    .text5 {
-        margin-left: 37%;
-    }
-
-}
-
-@media (max-width : 500px){
-    
-    .text5 {
-        margin-left: 46%;
-    }
-
-    .text4 {
-        margin-left: -20%;
-    }
-
-    .text3 {
-        margin-left: -13.5%;
-    }
-    .text2 {
-        margin-left: 7%;
-    }
-
-}
-
-@media (max-width : 480px){
-    .text5 {
-        margin-left: 48%;
-    }
-
-    .text2 {
-        margin-left: 8%;
-    }
-}
-
-
-@media (max-width : 420px){
-    .text5 {
-        margin-left: 49%;
-    }
-
-}
-
-
-@media (max-width : 420px){
-    .text5 {
-        margin-left: 50%;
-    }
-
-}
-
-@media (max-width : 390px){
-    .text5 {
-        margin-left: 61%;
-    }
-
-    .text4 {
-        margin-left: -26.5%;
-    }
-
-    .text3 {
-        margin-left: -19.5%;
-    }
-    .text2 {
-        margin-left: 10.5%;
-    }
-}
-@media (max-width : 360px) {
-    .text5 {
-        margin-left: 64%;
-    }
 }
 
 @keyframes animate_fading {
